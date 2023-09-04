@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background: #222;
+	display: flex;
+	padding: 0 50px;
+}
+
+.title {
+    color: aliceblue;
+    font-size: 30px
+  }
+
+.flex-conteiner{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: linear-gradient(to bottom, #333, rgb(0, 85, 71));
+	margin: 50px auto;
+	padding: 20px;
+	flex-grow: 1;
+	max-width: 500px;
+}
+
+.form {
+	min-width: 400px;
+	flex: 1;
+	text-align: center;
+	padding: 30px;
+	order: 5;
+
+}
+
+.form__input {
+	width: 300px;
+	padding: 7px;
+	margin: 6px 0;
+	border: none;
+	border-bottom: 3px solid #1c7;
+	background: transparent;
+	color: #fff;
+}
+
+.form__input:focus {
+	background: linear-gradient(to bottom, transparent, #333);
+	outline: none;
+	border-bottom: 3px solid #5f9;
+}
+
+.form textarea {
+	min-height: 140px;
+	resize: none;
+}
+
+.form-img {
+	flex: 1;
+	padding: 10px;
+	display: flex;
+	min-width: 300px;
+	max-width: 400px;
+	order: 2;
+}
+
+.form-img div {
+	padding: 10px;
+}
+
+.img-container {
+	margin: auto;
+}
+
+.img-container div {
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
+	padding: 40px;
+}
+
+.form-img img {
+	width: 100%;
+	margin: auto;
+	max-width: 200px;
+}
+
+.bottom {
+	background: #094;
+	border-bottom: none;
+	padding: 12px;
+}
+
+.bottom:hover {
+	background: #072;
+	border-bottom: none;
+	padding: 12px;
+}
+
+.bottom:focus {
+	background: #094;
+}
+
+.bottom:active {
+	background: linear-gradient(to bottom, #072, #050);
+}
+
+toggle-password {
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+	margin-left: -30px; /* Ajusta el margen según tus necesidades */
+  }
+  
+  .toggle-password::before {
+	content: "Mostrar";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	color: #333;
+	cursor: pointer;
+  }
+  
+  .password-shown .toggle-password::before {
+	content: "Ocultar";
+  }
